@@ -16,5 +16,5 @@ app.use('/posts', postRouter);
 app.use('/comments', commentRouter);
 
 
-app.listen(process.env.PORT || 5000, () => console.log(`App is listening on port ${process.env.PORT}`));
+app.listen(5600, () => console.log(`App is listening on port ${process.env.PORT}`));
 

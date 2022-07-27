@@ -5,7 +5,7 @@ import { userRouter } from './controllers/users-controller.js';
 import { postRouter } from './controllers/posts-controller.js';
 import { commentRouter } from './controllers/comments-controller.js';
 
-
+let port = process.env.PORT;
 
 const app = express();
 
@@ -16,5 +16,5 @@ app.use('/posts', postRouter);
 app.use('/comments', commentRouter);
 
 
-app.listen(5600, () => console.log(`App is listening on port ${process.env.PORT}`));
+app.listen(port, () => console.log(`App is listening on port ${port}`));
 

@@ -7,9 +7,9 @@
   },
   "type": "module",
   "main": "index.js",
-  "scripts": {
+  "scripts": {    
     "start": "node src/index.js",
-    "test": "nodemon src/index.js"
+    "build": "node build --output public"
   },
   "author": "Oosuke Ren",
   "license": "ISC",
